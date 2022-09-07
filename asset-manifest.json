@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-insquad/static/css/main.6d78986f.css",
+    "main.js": "/test-insquad/static/js/main.579a7a5a.js",
+    "index.html": "/test-insquad/index.html",
+    "main.6d78986f.css.map": "/test-insquad/static/css/main.6d78986f.css.map",
+    "main.579a7a5a.js.map": "/test-insquad/static/js/main.579a7a5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d78986f.css",
+    "static/js/main.579a7a5a.js"
+  ]
+}
