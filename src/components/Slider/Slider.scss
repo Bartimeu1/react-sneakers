@@ -1,0 +1,89 @@
+.slider {
+    margin-top: 45px;
+    background: #F4EFE9;
+    border-radius: 20px;
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__text {
+        margin-left: 61px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        cursor: pointer;
+        &:hover {
+            .slider-title {
+                color: #000;
+                transition: 0.2s;
+                & span {
+                    color: #A5D364;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+    &-button {
+        padding: 15px 55px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;    
+        color: #FFFFFF;
+        border: none;
+        border: 1px solid #A5D364;
+        background: #A5D364;
+        border-radius: 110px;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            background: inherit;
+            color: #A5D364;
+            transition: 0.2s;
+        }
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;    
+        color: #8BB43C;
+        margin-bottom: 20px;
+        transition: 0.2s;
+        & span {
+            color: #000;
+            transition: 0.2s;
+        }
+    }
+    &-brend {
+        position: absolute;
+        left: 20px;
+        top: 16px;
+    }
+}
+.slider .next-button {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 5;
+    bottom: 50%;
+    height: 35px;
+    width: 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+    cursor: pointer;
+    right: 10px;
+    &:hover {
+        svg path {
+            stroke: #8BB43C;
+        }
+    }
+}

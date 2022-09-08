@@ -1,0 +1,43 @@
+.productsTable {
+    margin-top: 40px;
+    &-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: #000000;
+    }
+    &-topper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-input {
+        padding: 13px 35px 15px 46px;
+        border: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        border: 1px solid #F3F3F3;
+        border-radius: 10px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #C4C4C4;
+        }
+    }
+    &-search {
+        position: relative;
+        & img {
+            position: absolute;
+            left: 18px;
+            top: 14px;
+        }
+    }
+    &-items {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
