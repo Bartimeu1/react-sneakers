@@ -1,11 +1,11 @@
 .productsItem {
+    position: relative;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     border: 1px solid #F3F3F3;
     border-radius: 40px;
     padding: 20px 10px 34px 33px;
-    cursor: pointer;
     margin: 20px 0;
     transition: 0.2s;
     &:hover {
@@ -39,5 +39,68 @@
     }
     &-img {
         margin-bottom: 14px;
+    }
+    &__liked {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        border: 1px solid #F8F8F8;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__unliked {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        width: 32px;
+        height: 32px;
+        background: #FEF0F0;
+        border: none;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        & svg path {
+            stroke: #FF8585;
+            fill: #FF8585;
+        }
+    }
+    &__unadded {
+        position: absolute;
+        bottom: 34px;
+        right: 29px;
+        width: 32px;
+        height: 32px;
+        background: #FFFFFF;
+        border: 1px solid #F8F8F8;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__added {
+        position: absolute;
+        bottom: 34px;
+        right: 29px;
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+        border-radius: 8px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        & svg path {
+            fill: #FFFFFF;
+        }
     }
 }
