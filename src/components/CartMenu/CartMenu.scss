@@ -3,15 +3,92 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    min-height: 1600px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
 }
-.CartMenu {
-    position: absolute;
+.cartMenu {
+    padding: 30px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 385px;
-    height: 100%;
+    height: 95vh;
     right: 0;
     background: #fff;
     box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+    &-button {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        background: #FFFFFF;
+        border: 1px solid #F2F2F2;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    &__items {
+        height: 70vh;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    &__sum {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__tax {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        margin-bottom: 25px;
+    }
+    &__order {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &-title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+        &-value {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+        }
+        &-button {
+            background: #9DD558;
+            border: 1px solid #9DD558;
+            border-radius: 18px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            width: 80%;
+            padding: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background: inherit;
+                color: #9DD558;
+                transition: 0.3s;
+            }
+        }
+    }
 }

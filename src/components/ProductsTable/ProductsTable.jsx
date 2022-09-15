@@ -6,7 +6,7 @@ import ProductsItem from '../ProductsItem/ProductsItem';
 import search from '../../assets/images/search.svg';
 
 
-function ProductsTable({data, onPlus}) {
+function ProductsTable({data, onPlus, deletedCartId}) {
 
     // Filter Items
     const [filterText, setFilterText] = useState('');
@@ -33,13 +33,15 @@ function ProductsTable({data, onPlus}) {
             </div>
         </div>
         <div className="productsTable-items">
-            {currentItems.map((item, index) => (
+            {currentItems.map((item) => (
                 <ProductsItem 
-                    key={index} 
+                    key={item.id}
+                    id={item.id}
                     title={item.name} 
                     price={item.price} 
                     imgUrl={item.image}
                     onPlus={onPlus}
+                    deletedCartId={deletedCartId}
                 ></ProductsItem>
             ))}
         </div>
