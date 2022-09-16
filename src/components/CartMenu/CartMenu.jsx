@@ -1,6 +1,5 @@
 import { React, useState, useEffect } from 'react';
 import CartItem from '../CartItem/CartItem';
-import CartEmpty from '../CartEmpty/CartEmpty';
 import './CartMenu.scss';
 
 
